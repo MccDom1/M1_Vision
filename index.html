@@ -1,0 +1,116 @@
+<!--
+============================================================
+  VisionOps Business Operations Platform
+  File: index.html
+  Creator: Dominique McClaney
+
+  Purpose:
+  Landing page that explains the business problem, value proposition, and major product capabilities.
+
+  The page uses semantic HTML5, accessible labels, reusable CSS,
+  and browser-based JavaScript. The product is a polished,
+  working business prototype created with AI assistance and
+  refined through human review, testing, and personalization.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VisionOps is an AI-assisted operations dashboard for monitoring devices, alerts, risks, and business performance.">
+  <title>VisionOps | AI-Assisted Business Operations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="VisionOps home">VisionOps</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Operations</a>
+      <a href="projects.html">Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Request Demo</a>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">AI-assisted operational intelligence</p>
+        <h1>Turn live business signals into clear action.</h1>
+        <p class="hero-copy">VisionOps helps small and mid-sized organizations monitor connected devices, review incidents, prioritize risk, and create management-ready summaries from one simple dashboard.</p>
+        <div class="button-row">
+          <a class="button" href="dashboard.html">Open Operations Center</a>
+          <a class="button secondary" href="contact.html">Request a Demo</a>
+        </div>
+        <ul class="trust-list" aria-label="VisionOps benefits">
+          <li>No software installation</li>
+          <li>Clear risk prioritization</li>
+          <li>Exportable management reports</li>
+        </ul>
+      </div>
+      <aside class="hero-card" aria-label="VisionOps business snapshot">
+        <div class="card-label">Today at a glance</div>
+        <div class="hero-stat-row"><span>Systems online</span><strong>24 / 25</strong></div>
+        <div class="hero-stat-row"><span>Critical incidents</span><strong class="danger-text">2</strong></div>
+        <div class="hero-stat-row"><span>Estimated time saved</span><strong>6.5 hrs</strong></div>
+        <div class="health-bar" aria-label="System health 96 percent"><span style="width:96%"></span></div>
+        <p class="muted">Sample data demonstrates how a manager could review operational health without reading raw technical logs.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading center-heading">
+        <p class="eyebrow dark-eyebrow">Business problem solved</p>
+        <h2>Less time searching. More time deciding.</h2>
+        <p class="muted">Operational data is often scattered across emails, spreadsheets, device portals, and support tickets. VisionOps combines the most important signals into a single decision-focused experience.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card feature-card"><span class="icon-chip">01</span><h3>Monitor</h3><p>See uptime, device activity, service events, and performance indicators in one place.</p></article>
+        <article class="card feature-card"><span class="icon-chip">02</span><h3>Prioritize</h3><p>Use severity, business impact, and AI-assisted recommendations to focus on the right issue first.</p></article>
+        <article class="card feature-card"><span class="icon-chip">03</span><h3>Communicate</h3><p>Create a clean operations summary that can be shared with leadership or support teams.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alternate-section">
+    <div class="container split-grid">
+      <div>
+        <p class="eyebrow dark-eyebrow">Measurable business value</p>
+        <h2>Estimate the impact of faster issue response.</h2>
+        <p>Use the calculator to estimate monthly labor savings when one dashboard reduces the time spent checking systems and preparing updates.</p>
+        <a class="text-link" href="dashboard.html#roiCalculator">Try the business value calculator &rarr;</a>
+      </div>
+      <div class="mini-metrics" aria-label="Example business outcomes">
+        <article><strong>38%</strong><span>less manual review time</span></article>
+        <article><strong>22%</strong><span>faster incident triage</span></article>
+        <article><strong>1 view</strong><span>for managers and operators</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container cta-box">
+      <div><p class="eyebrow">Built for practical business use</p><h2>See how VisionOps supports daily operations.</h2></div>
+      <a class="button secondary" href="projects.html">Explore Solutions</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>VisionOps</strong>
+      <p>AI-assisted operational visibility for growing organizations.</p>
+    </div>
+    <p>&copy; <span id="year"></span> Dominique McClaney. Business prototype.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!--
+============================================================
+  VisionOps Business Operations Platform
+  File: contact.html
+  Creator: Dominique McClaney
+
+  Purpose:
+  Accessible request-demo form that validates business information and creates an on-screen confirmation.
+
+  The page uses semantic HTML5, accessible labels, reusable CSS,
+  and browser-based JavaScript. The product is a polished,
+  working business prototype created with AI assistance and
+  refined through human review, testing, and personalization.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a VisionOps product demonstration or submit business feedback.">
+  <title>Request a Demo | VisionOps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="VisionOps home">VisionOps</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Operations</a>
+      <a href="projects.html">Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Request Demo</a>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+<main class="section">
+  <div class="container contact-layout">
+    <section>
+      <p class="eyebrow dark-eyebrow">Request a demo</p>
+      <h1>Tell us about your operational challenge.</h1>
+      <p class="muted">Use this form to demonstrate how a prospective customer could request more information. The prototype does not send data to a server.</p>
+      <div class="contact-points"><article><strong>Fast review</strong><span>Describe your current process and pain points.</span></article><article><strong>Relevant use case</strong><span>Select the business area that best matches your needs.</span></article><article><strong>Clear next step</strong><span>Receive an immediate on-screen confirmation.</span></article></div>
+    </section>
+
+    <section class="panel" aria-labelledby="demoFormHeading">
+      <h2 id="demoFormHeading">Business inquiry</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <div><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" minlength="2" required></div>
+          <div><label for="email">Business email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div><label for="company">Organization</label><input id="company" name="company" type="text" autocomplete="organization" required></div>
+          <div><label for="role">Role</label><input id="role" name="role" type="text" autocomplete="organization-title" required></div>
+        </div>
+        <label for="businessArea">Primary business area</label>
+        <select id="businessArea" name="businessArea" required><option value="">Select one</option><option>Facilities operations</option><option>Retail operations</option><option>Logistics and warehousing</option><option>Technology operations</option><option>Security monitoring</option><option>Other</option></select>
+        <label for="message">Current challenge or goal</label>
+        <textarea id="message" name="message" rows="6" minlength="20" placeholder="Example: Our team spends several hours each week combining device alerts and status updates into a management report." required></textarea>
+        <label class="checkbox-row"><input id="consent" type="checkbox" required><span>I understand this is a demonstration form and no information is transmitted.</span></label>
+        <button class="button full-button" type="submit">Prepare Demo Request</button>
+        <p id="formMessage" class="status-message hidden" role="status"></p>
+      </form>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>VisionOps</strong>
+      <p>AI-assisted operational visibility for growing organizations.</p>
+    </div>
+    <p>&copy; <span id="year"></span> Dominique McClaney. Business prototype.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!--
+============================================================
+  VisionOps Business Operations Platform
+  File: projects.html
+  Creator: Dominique McClaney
+
+  Purpose:
+  Business solution page showing product modules, use cases, workflow, and responsible AI controls.
+
+  The page uses semantic HTML5, accessible labels, reusable CSS,
+  and browser-based JavaScript. The product is a polished,
+  working business prototype created with AI assistance and
+  refined through human review, testing, and personalization.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore VisionOps business solutions for monitoring, incident response, management reporting, and operational planning.">
+  <title>Solutions | VisionOps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="VisionOps home">VisionOps</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Operations</a>
+      <a href="projects.html">Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Request Demo</a>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero"><div class="container"><p class="eyebrow">Product solutions</p><h1>One platform for operational visibility.</h1><p>VisionOps is designed as a flexible business tool that turns device and process data into clear priorities for managers, operators, and support teams.</p></div></section>
+  <section class="section"><div class="container">
+    <div class="grid-3">
+      <article class="card solution-card"><img src="images/dashboard.svg" alt="Illustration of a dashboard with charts and operational metrics"><h2>Executive Overview</h2><p>Summarizes uptime, open incidents, daily volume, and risk so leadership can understand performance quickly.</p><ul><li>KPI cards</li><li>Risk counts</li><li>Exportable summaries</li></ul></article>
+      <article class="card solution-card"><img src="images/camera.svg" alt="Illustration of a connected monitoring camera"><h2>Device Monitoring</h2><p>Tracks cameras, sensors, gateways, or other connected business equipment from a common interface.</p><ul><li>Connection status</li><li>Quality thresholds</li><li>Preventive alerts</li></ul></article>
+      <article class="card solution-card"><img src="images/cloud.svg" alt="Illustration of devices securely connected to a cloud service"><h2>Incident Coordination</h2><p>Helps teams review severity, suggested actions, assignments, and resolution status without searching multiple systems.</p><ul><li>Severity filtering</li><li>Action checklists</li><li>Status tracking</li></ul></article>
+    </div>
+  </div></section>
+
+  <section class="section alternate-section"><div class="container">
+    <div class="section-heading"><p class="eyebrow dark-eyebrow">Example workflow</p><h2>From raw event to business decision</h2></div>
+    <ol class="workflow-list">
+      <li><span>1</span><div><h3>Collect</h3><p>Receive status updates from business systems or connected devices.</p></div></li>
+      <li><span>2</span><div><h3>Organize</h3><p>Group events by system, severity, time, and operational impact.</p></div></li>
+      <li><span>3</span><div><h3>Recommend</h3><p>Use AI-assisted analysis to propose a next action in plain language.</p></div></li>
+      <li><span>4</span><div><h3>Review</h3><p>Require a person to verify the recommendation before acting.</p></div></li>
+      <li><span>5</span><div><h3>Report</h3><p>Create a management summary for accountability and improvement.</p></div></li>
+    </ol>
+  </div></section>
+
+  <section class="section"><div class="container split-grid">
+    <div><p class="eyebrow dark-eyebrow">Responsible AI by design</p><h2>AI supports decisions; people remain accountable.</h2><p>VisionOps labels recommendations clearly, uses sample data in this prototype, avoids automatic high-impact decisions, and reminds users to verify outputs before acting.</p></div>
+    <div class="check-card"><h3>Built-in safeguards</h3><ul class="check-list"><li>Human review before action</li><li>Clear distinction between facts and recommendations</li><li>No sensitive personal data required</li><li>Transparent use of simulated data</li><li>Editable outputs instead of hidden automation</li></ul></div>
+  </div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>VisionOps</strong>
+      <p>AI-assisted operational visibility for growing organizations.</p>
+    </div>
+    <p>&copy; <span id="year"></span> Dominique McClaney. Business prototype.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

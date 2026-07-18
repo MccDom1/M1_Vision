@@ -1,0 +1,111 @@
+<!--
+============================================================
+  VisionOps Business Operations Platform
+  File: dashboard.html
+  Creator: Dominique McClaney
+
+  Purpose:
+  Interactive operations center with simulated metrics, incident filtering, recommendations, reporting, and an ROI calculator.
+
+  The page uses semantic HTML5, accessible labels, reusable CSS,
+  and browser-based JavaScript. The product is a polished,
+  working business prototype created with AI assistance and
+  refined through human review, testing, and personalization.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VisionOps operations dashboard with live metrics, incident filtering, AI-assisted recommendations, and ROI estimates.">
+  <title>Operations Center | VisionOps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="VisionOps home">VisionOps</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Operations</a>
+      <a href="projects.html">Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Request Demo</a>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+<main class="section">
+  <div class="container">
+    <div class="page-title-row">
+      <div><p class="eyebrow dark-eyebrow">Operations center</p><h1>Business Operations Dashboard</h1><p class="muted">Sample data updates in the browser to demonstrate a working management tool.</p></div>
+      <div class="button-row compact-row"><button id="refreshButton" class="button outline" type="button">Refresh Data</button><button id="exportButton" class="button" type="button">Export Summary</button></div>
+    </div>
+
+    <section class="dashboard-grid" aria-label="Key performance indicators">
+      <article class="metric-card"><span class="metric-label">Events Processed</span><h2 id="packetCount">12,480</h2><p class="trend positive">+8.4% today</p></article>
+      <article class="metric-card"><span class="metric-label">Active Systems</span><h2 id="activeDevices">24</h2><p>of 25 connected</p></article>
+      <article class="metric-card"><span class="metric-label">AI Confidence</span><h2 id="modelConfidence">94.3%</h2><p>recommendation quality</p></article>
+      <article class="metric-card"><span class="metric-label">Session Uptime</span><h2 id="uptime">0 sec</h2><p>live browser session</p></article>
+    </section>
+
+    <div class="operations-layout">
+      <section class="panel" aria-labelledby="incidentsHeading">
+        <div class="panel-title-row">
+          <div><h2 id="incidentsHeading">Incident Queue</h2><p class="muted">Filter current issues by severity and review the suggested action.</p></div>
+          <div class="filter-box"><label for="severityFilter">Severity</label><select id="severityFilter"><option value="all">All incidents</option><option value="critical">Critical</option><option value="warn">Warning</option><option value="info">Information</option></select></div>
+        </div>
+        <div class="table-wrap">
+          <table id="eventTable">
+            <caption class="sr-only">Current operational incidents</caption>
+            <thead><tr><th scope="col">Time</th><th scope="col">System</th><th scope="col">Issue</th><th scope="col">Severity</th><th scope="col">Status</th></tr></thead>
+            <tbody>
+              <tr data-severity="critical" data-system="Camera 04" data-issue="Safety zone obstruction"><td>10:42 AM</td><td>Camera 04</td><td>Safety zone obstruction</td><td><span class="badge critical">Critical</span></td><td>Open</td></tr>
+              <tr data-severity="warn" data-system="Sensor 12" data-issue="Temperature above target"><td>10:35 AM</td><td>Sensor 12</td><td>Temperature above target</td><td><span class="badge warn">Warning</span></td><td>Review</td></tr>
+              <tr data-severity="info" data-system="Gateway 02" data-issue="Scheduled synchronization complete"><td>10:20 AM</td><td>Gateway 02</td><td>Scheduled synchronization complete</td><td><span class="badge info">Information</span></td><td>Closed</td></tr>
+              <tr data-severity="critical" data-system="Dock 03" data-issue="Network connection unavailable"><td>9:58 AM</td><td>Dock 03</td><td>Network connection unavailable</td><td><span class="badge critical">Critical</span></td><td>Open</td></tr>
+              <tr data-severity="warn" data-system="Camera 11" data-issue="Image quality below threshold"><td>9:41 AM</td><td>Camera 11</td><td>Image quality below threshold</td><td><span class="badge warn">Warning</span></td><td>Assigned</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <aside class="panel recommendation-card" aria-labelledby="recommendationHeading">
+        <div class="ai-label">AI-assisted recommendation</div>
+        <h2 id="recommendationHeading">Recommended next action</h2>
+        <p id="recommendationText">Inspect Camera 04 first because the issue is marked critical and may affect a safety-controlled area.</p>
+        <ol id="actionList" class="action-list">
+          <li>Confirm the obstruction from a second camera angle.</li>
+          <li>Notify the floor supervisor.</li>
+          <li>Document the resolution time.</li>
+        </ol>
+        <button id="completeActionButton" class="button full-button" type="button">Mark Action Reviewed</button>
+        <p id="actionStatus" class="status-message hidden" role="status"></p>
+      </aside>
+    </div>
+
+    <section id="roiCalculator" class="panel roi-panel">
+      <div><p class="eyebrow dark-eyebrow">Business value calculator</p><h2>Estimate monthly labor savings</h2><p class="muted">Enter realistic values for your organization. The result is an estimate, not a financial guarantee.</p></div>
+      <form id="roiForm" class="roi-form">
+        <div><label for="employees">Employees reviewing systems</label><input id="employees" type="number" min="1" value="4" required></div>
+        <div><label for="hoursSaved">Hours saved per employee each week</label><input id="hoursSaved" type="number" min="0" step="0.5" value="3" required></div>
+        <div><label for="hourlyCost">Average hourly labor cost ($)</label><input id="hourlyCost" type="number" min="0" step="1" value="35" required></div>
+        <button class="button" type="submit">Calculate Savings</button>
+      </form>
+      <div class="roi-result" aria-live="polite"><span>Estimated monthly savings</span><strong id="roiResult">$1,819</strong><small id="roiDetails">Based on 4.33 weeks per month.</small></div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>VisionOps</strong>
+      <p>AI-assisted operational visibility for growing organizations.</p>
+    </div>
+    <p>&copy; <span id="year"></span> Dominique McClaney. Business prototype.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

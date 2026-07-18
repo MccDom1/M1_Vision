@@ -1,0 +1,8 @@
+<!--
+  VisionOps SVG Illustration
+  File: cloud.svg
+  Purpose: Decorative illustration of connected devices communicating with a cloud platform.
+  SVG is an XML-based vector-image format. The shapes, paths,
+  colors, and text below are rendered by the browser as an image.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect width="600" height="400" fill="#f4f7fa"/><path d="M200 260 C130 260 130 170 200 165 C215 90 320 80 350 145 C430 120 485 185 450 250 C430 270 400 275 360 275 H205 Z" fill="#1769aa"/><circle cx="115" cy="315" r="30" fill="#0b1f3a"/><circle cx="300" cy="330" r="30" fill="#0b1f3a"/><circle cx="490" cy="315" r="30" fill="#0b1f3a"/><path d="M115 285 L220 245 M300 300 L300 270 M490 285 L390 245" stroke="#2e8b57" stroke-width="8"/></svg>

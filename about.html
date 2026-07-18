@@ -1,0 +1,71 @@
+<!--
+============================================================
+  VisionOps Business Operations Platform
+  File: about.html
+  Creator: Dominique McClaney
+
+  Purpose:
+  Explains the product concept, business purpose, development process, AI use, and product limitations.
+
+  The page uses semantic HTML5, accessible labels, reusable CSS,
+  and browser-based JavaScript. The product is a polished,
+  working business prototype created with AI assistance and
+  refined through human review, testing, and personalization.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the VisionOps business purpose, AI-assisted development process, and responsible-use approach.">
+  <title>About | VisionOps</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="VisionOps home">VisionOps</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Operations</a>
+      <a href="projects.html">Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Request Demo</a>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">Dark Mode</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero"><div class="container"><p class="eyebrow">About VisionOps</p><h1>A practical AI-assisted business prototype.</h1><p>VisionOps demonstrates how a growing organization could simplify operational monitoring, incident review, reporting, and planning.</p></div></section>
+  <section class="section"><div class="container split-grid align-start">
+    <article><h2>Business purpose</h2><p>Many organizations rely on several disconnected tools to understand system health. Employees may copy information into spreadsheets, search emails for updates, or manually prepare status reports. VisionOps reduces that friction by presenting key signals, risks, and recommended actions in one clear interface.</p><p>The prototype can support facilities teams, retail operations, logistics groups, technology departments, security operations, and organizations that manage connected devices.</p></article>
+    <aside class="card"><h2>Product goals</h2><ul class="check-list"><li>Reduce manual monitoring time</li><li>Improve incident prioritization</li><li>Support management communication</li><li>Demonstrate responsible AI assistance</li><li>Provide a base for future real data integrations</li></ul></aside>
+  </div></section>
+
+  <section class="section alternate-section"><div class="container">
+    <div class="section-heading"><p class="eyebrow dark-eyebrow">Creation process</p><h2>AI-assisted, reviewed, and personalized</h2><p class="muted">The final product is not a one-click output. Each stage required planning, testing, revision, and human decisions.</p></div>
+    <div class="grid-3">
+      <article class="card"><h3>1. Plan</h3><p>Defined the business problem, target users, product modules, and success measures before writing code.</p></article>
+      <article class="card"><h3>2. Generate and build</h3><p>Used AI assistance to brainstorm features, improve wording, organize code, and identify validation and accessibility needs.</p></article>
+      <article class="card"><h3>3. Review and improve</h3><p>Personalized the design, revised the business logic, tested every link and control, and removed content that did not fit the assignment.</p></article>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container split-grid align-start">
+    <article><h2>Technology approach</h2><p>The prototype uses HTML5 for structure, CSS for visual design and responsive layout, and JavaScript for live values, filtering, calculations, theme selection, form validation, local storage, and report export. It runs directly in a browser and does not require a database or paid software service.</p></article>
+    <article><h2>Current limitations</h2><p>The data is simulated and should not be used for real operational decisions. The AI recommendation is rule-based in this prototype, not connected to a trained model. A production version would require secure authentication, real integrations, data governance, audit logs, testing, legal review, and organizational approval.</p></article>
+  </div></section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>VisionOps</strong>
+      <p>AI-assisted operational visibility for growing organizations.</p>
+    </div>
+    <p>&copy; <span id="year"></span> Dominique McClaney. Business prototype.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

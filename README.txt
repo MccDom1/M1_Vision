@@ -22,8 +22,7 @@ HOW TO TEST
 5. Test Dark Mode and refresh the page to confirm the preference is remembered.
 6. Open Request Demo and test the required fields and confirmation message.
 
-HOW TO PUBLISH
-Upload the entire McClaney_visionops_semester_project folder contents to the same public web directory. Keep the HTML, CSS, JavaScript, and images folder together so all relative links continue to work.
+
 
 RESPONSIBLE USE
 This prototype uses simulated business data. Recommendations are clearly labeled as AI-assisted and require human review. It does not transmit form data or make automatic high-impact decisions.

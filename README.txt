@@ -24,5 +24,5 @@ HOW TO TEST
 
 
 
-RESPONSIBLE USE
+RESPONSIBLE USAGE
 This prototype uses simulated business data. Recommendations are clearly labeled as AI-assisted and require human review. It does not transmit form data or make automatic high-impact decisions.

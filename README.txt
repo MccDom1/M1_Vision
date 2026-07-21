@@ -14,7 +14,7 @@ FILES
 - images/           Original project illustrations
 - .vscode/          Existing local editor settings
 
-HOW TO TES
+HOW TO TEST
 1. Open the project folder in Visual Studio Code.
 2. Right-click index.html and choose Open with Live Server.
 3. Test every navigation link.

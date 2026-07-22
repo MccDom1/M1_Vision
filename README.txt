@@ -1,6 +1,6 @@
 VISIONOPS BUSINESS OPERATIONS PLATFORM
 
-PROJECTS PURPOS
+PROJECTS PURPOSE
 VisionOps is a working browser-based business prototype that helps organizations monitor operational signals, prioritize incidents, review AI-assisted recommendations, estimate labor savings, and prepare management summaries.
 
 FILES
